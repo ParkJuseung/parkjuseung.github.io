@@ -13,7 +13,7 @@
     "publish": "tsx ./tools/publish.ts",
     "build": "bash ./tools/build.sh",
     "deploy": "bash ./tools/deploy.sh",
-    "build:file": "mkdir -p ./app/public/styles && cp -rf ./app/styles/* ./app/public/styles/ && mkdir -p ./app/public/assets && cp -rf ./app/assets/* ./app/public/assets/ && mkdir -p ./app/public/images && cp -rf ./images/* ./app/public/images/"
+    "build:file": "shx mkdir -p ./app/public/styles && shx cp -rf ./app/styles/* ./app/public/styles/ && shx mkdir -p ./app/public/assets && shx cp -rf ./app/assets/* ./app/public/assets/ && shx mkdir -p ./app/public/images && shx cp -rf ./images/* ./app/public/images/"
   },
   "author": "parksb",
   "license": "MIT",
@@ -51,6 +51,7 @@
     "markdown-it-mermaid": "^0.2",
     "markdown-it-table-of-contents": "^0.6",
     "markdown-it-texmath": "^0.9",
+    "shx": "^0.4.0",
     "ts-node": "^10.7",
     "tsx": "^3.12.7",
     "typescript": "^4.6",
