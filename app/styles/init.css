@@ -39,14 +39,12 @@ a {
 }
 
 #main-container {
-  margin-top: 90px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
 #top-container {
-  position: fixed;
   padding-bottom: 5px;
-  z-index: 999;
 }
 
 #top-container h1 {
@@ -57,8 +55,9 @@ a {
 
 #top-container small {
   display: block;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 #top-container .logo-link span {
@@ -66,14 +65,22 @@ a {
   font-weight: 400;
 }
 
-#top-container .logo-link:hover,
-#top-container .logo-link:focus {
-  color: white;
-  text-shadow: 1px 1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black;
+
+#top-container .info-link {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+#top-container .info-link:last-child {
+  margin-right: 0;
 }
 
 #top-container .info-link:hover,
 #top-container .info-link:focus {
-  color: white;
-  background-color: black;
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
