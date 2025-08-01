@@ -3,28 +3,28 @@
 @import 'katex.css';
 
 #main-container {
-  max-width: 800px;
-  margin: 90px auto auto;
+  max-width: 50rem;
+  margin: 5.625rem auto auto;
 }
 
 #article-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 #article-subtitle {
   display: inline;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 #article-date {
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #767676;
 }
 
 #article-content-container {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 #article-social-container {
@@ -72,12 +72,11 @@
 }
 
 #article-navigation a:hover .article-navigation-title {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: #0066cc;
 }
 
 #article-navigation a:hover .article-navigation-arrow {
-  opacity: 0.7;
+  color: #0066cc;
 }
 
 #article-list-button-container {
@@ -87,21 +86,20 @@
 
 #article-list-button-container #article-list-button {
   display: inline-block;
-  padding: 12px 24px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background: #f8f9fa;
-  color: #333;
-  font-size: 14px;
-  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 400;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 #article-list-button-container #article-list-button:hover {
-  background: #e9ecef;
-  border-color: #adb5bd;
-  transform: translateY(-1px);
+  background: #0066cc;
+  border-color: #0066cc;
+  color: white;
 }
 
 #article-comments {
@@ -166,14 +164,14 @@
 }
 
 #article-content-container a {
-  text-decoration: underline;
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 #article-content-container a:hover,
 #article-content-container a:focus {
-  text-decoration: none;
-  background-color: black;
-  color: white;
+  color: #0052a3;
 }
 
 #article-content-container pre {

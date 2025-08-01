@@ -1,25 +1,7 @@
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  font-weight: 700;
-  src: local('Spoqa Han Sans Bold'),
-  url('https://cdn.jsdelivr.net/gh/parksb/cdn@v1.0/font/SpoqaHanSansNeo/woff2/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/parksb/cdn@v1.0/font/SpoqaHanSansNeo/woff/SpoqaHanSansNeo-Bold.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/parksb/cdn@v1.0/font/SpoqaHanSansNeo/ttf/SpoqaHanSansNeo-Bold.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Spoqa Han Sans Neo';
-  font-weight: 400;
-  src: local('Spoqa Han Sans Regular'),
-  url('https://cdn.jsdelivr.net/gh/parksb/cdn@v1.0/font/SpoqaHanSansNeo/woff2/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
-  url('https://cdn.jsdelivr.net/gh/parksb/cdn@v1.0/font/SpoqaHanSansNeo/woff/SpoqaHanSansNeo-Regular.woff') format('woff'),
-  url('https://cdn.jsdelivr.net/gh/parksb/cdn@v1.0/font/SpoqaHanSansNeo/ttf/SpoqaHanSansNeo-Regular.ttf') format('truetype');
-  font-display: swap;
-}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
 * {
-  font-family: 'Spoqa Han Sans Neo', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   margin: 0;
   padding: 0;
   word-break: keep-all;
@@ -27,9 +9,15 @@
   text-rendering: optimizeLegibility;
 }
 
+h1, h2, h3, h4, h5, h6, ul, ol, details {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-size: 1rem;
   margin: auto;
-  padding: 20px 30px 50px 30px;
+  padding: 1.25rem 1.875rem 3.125rem 1.875rem;
 }
 
 a {
@@ -39,8 +27,9 @@ a {
 }
 
 #main-container {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  max-width: 50rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 #top-container {
@@ -48,28 +37,33 @@ a {
 }
 
 #top-container h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   display: inline;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #top-container small {
   display: block;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.625rem;
 }
 
 #top-container .logo-link span {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
+#top-container .logo-link:hover h1,
+#top-container .logo-link:hover span {
+  color: #0066cc;
+}
 
 #top-container .info-link {
-  margin-right: 30px;
+  margin-right: 1.875rem;
   text-decoration: none;
   color: #333;
+  font-weight: 600;
   transition: color 0.2s ease;
 }
 
@@ -79,8 +73,5 @@ a {
 
 #top-container .info-link:hover,
 #top-container .info-link:focus {
-  color: #000;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+  color: #0066cc;
 }
